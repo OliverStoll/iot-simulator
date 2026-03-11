@@ -1,6 +1,6 @@
-# 🌐 Web of Things Playground
+# 🌐 Internet of Things Playground
 
-This repository hosts a Docker-based Web of Things (WoT) Playground — a platform to explore and interact with both local and remote IoT devices. Its primary goal is to help users understand the [W3C Web of Things](https://www.w3.org/WoT/) standard through hands-on experimentation.
+This repository hosts a Docker-based Internet of Things Simulator — a platform to explore and interact with both local and remote IoT devices. Its primary goal is to help users understand the [W3C Web of Things](https://www.w3.org/WoT/) standard through hands-on experimentation.
 
 The Web of Things standard promotes interoperability, standardization of data formats, and secure communication between devices by defining abstract descriptions of Things. This application allows users to define multiple devices via configuration files, interact with them, and observe communication flows.
 
