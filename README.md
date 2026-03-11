@@ -7,11 +7,11 @@ The Web of Things standard promotes interoperability, standardization of data fo
 
 ## 🧭 Table of Contents
 
-- [🧱 Architecture](#-architecture)
-- [🚀 Install and Run](#-install-and-run)
-- [📖 User Manual](#-user-manual)
-- [🛠️ Local Development](#️-local-development)
-- [📡 API Documentation](#-api-documentation)
+- [Architecture](#-architecture)
+- [Install and Run](#-install-and-run)
+- [User Manual](#-user-manual)
+- [Local Development](#️-local-development)
+- [API Documentation](#-api-documentation)
 
 
 ## 🧱 Architecture
@@ -35,12 +35,12 @@ Interaction flow:
 
 Run everything with one command using Docker.
 
-### ✅ Requirements
+### Requirements
 - Docker (≥ 20.2.0, tested as root)
 - Docker Compose
 - Git
 
-### 📦 Setup
+### Setup
 
 ```bash
 git clone https://git.tu-berlin.de/f2499r/web-of-things-playground.git
@@ -70,13 +70,10 @@ be available under the following url:
 
 This section explains how to use the Playground to simulate Web of Things (WoT) scenarios. Sample files are included for each feature.
 
-> ℹ️ Ensure the application is running properly (Docker Compose recommended).
-
-
 
 ### 📝 Uploading a Configuration File
 
-#### 📁 Configuration Structure
+#### Configuration Structure
 
 A configuration file must define:
 - `devices`: A list of local Things with required fields: `title`, `description`, `properties`, `actions`, and `events`.
@@ -108,43 +105,43 @@ A configuration file must define:
 
 For further examples: See `examples/scenario.json`.
 
-#### ⬆️ Uploading the File
+#### Uploading the File
 
 Upload via drag-and-drop or by selecting the file. After processing, local Things are shown as `created`, remote ones as `added`. The interface marks remote Things accordingly.
 
 
 
-### 🧾 Getting and Updating a Property
+### Getting and Updating a Property
 
 1. Click on a Thing to view its `properties`, `actions`, and `events`.
 2. Property values load automatically.
 3. To update: click the field, enter a new value, and press **Enter**.
 4. Logs will reflect the changes and display all triggered requests.
 
-💡 For reduced log verbosity, use a playbook (see below).
+For reduced log verbosity, use a playbook (see below).
 
 
-### 🎛️ Calling an Action
+### Calling an Action
 
 Two types are supported:
 - **Without parameters**: Click the action directly.
 - **With URI parameters**: Edit the pre-filled string (e.g., `makeDrink?drinkId=espresso&size=s&quantity=3`) and press **Enter**.
 
-📌 Actions with parameters in the body are **not supported**.
+Actions with parameters in the body are **not supported**.
 
 
 
-### 🔄 Interaction Between Things
+### Interaction Between Things
 
 Things can interact with each other using the **remote** icon at the top-right of each Thing.
 
-#### ⚙️ Properties and Actions
+#### Properties and Actions
 
 1. Open the interaction menu.
 2. Select a target Thing.
 3. Trigger properties or actions like usual.
 
-#### 📡 Event Subscription
+#### Event Subscription
 
 1. Choose an event in the interaction menu.
 2. The Thing subscribes and waits.
@@ -152,11 +149,11 @@ Things can interact with each other using the **remote** icon at the top-right o
 
 
 
-### 🧩 Executing a Playbook
+### Executing a Playbook
 
 Playbooks automate multi-step interactions.
 
-#### 🗂️ File Format
+#### File Format
 
 A playbook must contain:
 - `steps`: an array of action/property steps with `deviceId`, `type`, and `value`.
@@ -191,19 +188,19 @@ Here is an example based on the examples/scenario.json Configuration file:
 
 Further example available in `examples/playbook_scenario.json`.
 
-#### ▶️ Upload and Execute
+#### Upload and Execute
 
 Upload a playbook using the file upload interface. Steps will be executed sequentially. You may upload another playbook after completion.
 
 
 
-### 📥 Downloading Logs
+### Downloading Logs
 
 Click the **Download** button at the top-right of the log window to save logs as a `.txt` file.
 
 
 
-### 🛑 Shutdown Things
+### Shutdown Things
 
 Click **Shutdown** to terminate all simulated Things. This stops and removes the containers. You can then upload a new configuration or exit Docker Compose.
 
