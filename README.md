@@ -1,4 +1,4 @@
-# 🌐 Internet of Things Playground
+# 🌐 Internet of Things Simulator
 
 This repository hosts a Docker-based Internet of Things Simulator — a platform to explore and interact with both local and remote IoT devices. Its primary goal is to help users understand the [W3C Web of Things](https://www.w3.org/WoT/) standard through hands-on experimentation.
 
