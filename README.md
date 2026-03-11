@@ -233,9 +233,3 @@ npm run dev
 ```
 
 Refer to the individual `README` files in each folder for more.
-
-
-## 🤝 Contributing
-
-Contributions are welcome!  
-→ Just open a PR, or start a discussion in Issues.
